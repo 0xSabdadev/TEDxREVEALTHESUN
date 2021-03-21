@@ -1,0 +1,298 @@
+/* Common style */
+.wow .container {
+    width: 100%;
+}
+
+.grid .sk {
+
+    float: left;
+
+}
+
+@media screen and (min-width: 551px) {
+    .grid {
+
+        width: 100%;
+    }
+
+    .grid .spk {
+
+        width: 500px;
+    }
+
+
+
+    .grid figcaption {
+        padding-top: 21%;
+        line-height: normal;
+    }
+
+
+    /* Hover effects */
+
+
+    .grid .spk:hover figcaption h2,
+    .grid .spk:hover figcaption p {
+
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    .grid .sk:hover figcaption h2,
+    .grid .sk:hover figcaption p {
+
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    .grid figcaption h2 {
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .grid figcaption p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .grid {
+        width: 100%;
+    }
+
+    .grid .spk {
+
+        margin: 2px;
+        font-size: 10px;
+    }
+
+    .grid .sk {
+
+        font-size: 10px;
+    }
+
+    .grid figcaption {
+
+        line-height: normal;
+    }
+
+    .grid figcaption p {
+        font-size: 10px;
+    }
+
+    .grid figcaption h2 {
+
+        font-size: 11px;
+
+    }
+
+    /* Hover effects */
+
+    .grid .spk:hover figcaption h2,
+    .grid .spk:hover figcaption p {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+    .grid .sk:hover figcaption h2,
+    .grid .sk:hover figcaption p {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+}
+
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    background: #333;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.grid figcaption h2 {
+    font-weight: 300;
+
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+    -webkit-transform: translateY(0px) scale(1);
+    transform: translateY(0px) scale(1);
+}
+
+.grid figcaption p {
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+    -webkit-transform: translateY(100%) scale(0.25);
+    transform: translateY(100%)scale(0.25);
+    opacity: 0;
+}
+
+
+.grid figcaption p:hover {
+    -webkit-transform: translateY(100%) scale(1);
+    transform: translateY(100%) scale(1);
+
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.grid svg {
+    position: absolute;
+    top: 0px;
+    /* fixes rendering issue in FF */
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.grid .spk svg .st0 {
+    fill: #FF0000;
+    fill-opacity: 0.4;
+    -webkit-transform: translateY(120px);
+    transform: translateY(120px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .spk:hover svg .st0 {
+    fill-opacity: 0.4;
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .spk svg .st1 {
+    fill: aqua;
+    fill-opacity: 0.4;
+    -webkit-transform: translateY(120px);
+    transform: translateY(120px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .spk:hover svg .st1 {
+    fill-opacity: 0.4;
+
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .sk svg .st0 {
+    fill: #FF0000;
+    fill-opacity: 0.4;
+    -webkit-transform: translateY(120px);
+    transform: translateY(120px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .sk:hover svg .st0 {
+    fill-opacity: 0.4;
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .sk svg .st1 {
+    fill: aqua;
+    fill-opacity: 0.4;
+    -webkit-transform: translateY(120px);
+    transform: translateY(120px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.grid .sk:hover svg .st1 {
+    fill-opacity: 0.4;
+
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.overlayr {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    text-align: left;
+    background-color: rgba(255, 0, 0, 0.6);
+    height: 12%;
+    padding-top: 4px;
+    width: 100%;
+    transition: .5s ease;
+
+}
+
+.overlaya {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    text-align: left;
+    background-color: rgba(0, 255, 255, 0.6);
+    height: 12%;
+    padding-top: 4px;
+    width: 100%;
+    transition: .5s ease;
+
+}
+
+.grid .spk:hover .overlaya,
+.grid .spk:hover .overlayr {
+    opacity: 0;
+}
+
+.grid .sk:hover .overlaya,
+.grid .sk:hover .overlayr {
+    opacity: 0;
+}
+
+.grid .aqua {
+    color: #000;
+}
+
+.grid .redted {
+    color: #fff;
+}
+
+.grid .spk:hover figcaption p {
+    opacity: 1;
+}
+
+.grid .spk:hover figcaption h2 {
+    opacity: 0;
+}
+
+.grid .sk:hover figcaption p {
+    opacity: 1;
+}
+
+.grid .sk:hover figcaption h2 {
+    opacity: 0;
+}

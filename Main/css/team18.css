@@ -1,0 +1,71 @@
+.team figure img {
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.team figure img:hover {
+    transition: 0.5s;
+}
+
+.team p {
+    opacity: 0;
+}
+
+.team :hover p {
+    opacity: 1;
+    transition: 1s;
+}
+
+.team :hover img {
+    opacity: 0.3;
+    transition: 1s;
+}
+
+
+#iconteamr {
+    color: #e62b1e !important;
+    ;
+}
+
+#iconteama {
+    color: aqua !important;
+    ;
+}
+
+@media (min-width: 551px) {
+    .team figure {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .team figure img {
+
+        width: 200px;
+
+
+    }
+
+    .team figure figcaption p {
+        position: absolute;
+        -webkit-transform: translateY(-115px)translateX(60px);
+        transform: translateY(-115px)translateX(60px);
+    }
+}
+
+@media (max-width: 551px) {
+    .team figure img {
+        margin-right: 1px;
+        margin-left: 1px;
+        max-width: 140px;
+    }
+
+    .team figure figcaption p {
+        position: absolute;
+        -webkit-transform: translateY(-82px)translateX(22px);
+        transform: translateY(-82px)translateX(22px);
+    }
+
+    .team h5 {
+        font-size: 14px;
+    }
+}
